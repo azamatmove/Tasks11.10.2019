@@ -1,5 +1,5 @@
 //import Foundation
-//print("Enter two numbers using backspace:")
+//print("Enter two numbers using backspace:") //1) Напишите код который будет сортировать 2 числа по большему значению. (Используйте оператор if и больше меньше)
 //var firstNumber = readLine()!
 //var secondNumber = readLine()!
 //
@@ -11,7 +11,7 @@
 //        print(firstNumber)
 //    }
 
-//var name : [String] = []
+//var name : [String] = [] // бесконечный цикл добавления имен
 //
 //while (true) {
 //    var addName = readLine()!
@@ -19,7 +19,7 @@
 //}
         
 //import Foundation
-//print("Enter two word using backspace:")
+//print("Enter two word using backspace:") //2) Напишите код который будет сортировать 2 текста по большему значению букв в тексте . (Используйте оператор if и больше меньше и count у текста)
 //var firstWord = readLine()!
 //var secondWord = readLine()!
 //
@@ -35,27 +35,27 @@
 //array.sort(by: >)
 //print(array)
 
-var array  = [1, 2, 3, 4, 5, 6, 7, 8]
-
-var temp : Int = 0
-for item in array {
-    for item in 0...(array.count - 1) {
-        if item == 0 {
-                array[0] = array[item]
-            } else {
-            temp = array[item - 1]
-                if array[item] > temp {
-                array[item - 1] = array[item]
-                    array[item] = temp
-                }
-        }
-    }
-}
-print(array)
+//var array  = [1, 2, 3, 4, 5, 6, 7, 8]
+//// 3) Напишите код который будет сортировать 8 чисел по большему значению. (Используйте оператор if и больше меньше)
+//var temp : Int = 0
+//for item in array {
+//    for item in 0...(array.count - 1) {
+//        if item == 0 {
+//                array[0] = array[item]
+//            } else {
+//            temp = array[item - 1]
+//                if array[item] > temp {
+//                array[item - 1] = array[item]
+//                    array[item] = temp
+//                }
+//        }
+//    }
+//}
+//print(array)
 
 
 //var array  = ["Vitkas", "Aza", "Gulmirahon", "Dianochka", "Danilchichek", "Aidai", "Gera", "Giorgio"]
-//
+// //4) Напишите код который будет сортировать 8 текста по большему значению букв в тексте . (Используйте оператор if и больше меньше и count у текста)
 //var temp : String = ""
 //for item in array {
 //    for item in 0...(array.count - 1) {
