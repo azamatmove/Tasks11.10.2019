@@ -11,6 +11,8 @@
 //        print(firstNumber)
 //    }
 
+import Foundation
+
 //var name : [String] = [] // бесконечный цикл добавления имен
 //
 //while (true) {
@@ -72,3 +74,100 @@
 //}
 //print(array)
 
+
+
+////5) Напишите код который будет принимать в себе число (например 10 и другие числа введенные пользователем в терминале)  и одну букву (например “a” и другие буквы из терминала) и выводить текст с количеством символов (Используйте оператор for и 0…(3) range
+//
+//print("Enter a number:")
+//var number: Int = Int(readLine()!) ?? 0
+//
+//print()
+//
+//print("Enter a letter:")
+//var letter = readLine()!
+//
+//print()
+//
+//for item in 0...number - 1 {
+//    print(letter)
+//}
+
+
+
+////6) Напишите код который будет вычислять среднее арифметические из 10 чисел (простые операторы + и /)
+//print("Enter numbers using space:")
+//var num = readLine()!
+//var numSplit = num.split(separator: " ")
+//
+//var averageValue : Double = 0
+//for item in 0...numSplit.count - 1 {
+//    averageValue += Double(numSplit[item]) ?? 0
+//}
+//print(averageValue / Double(numSplit.count))
+
+
+//7) Напишите код который будет считать плошать прямоугольника по ширине и высоте чисел
+
+//print("Enter the length and width of a rectangle:")
+//var length = readLine()!
+//
+//print()
+//
+//var width = readLine()!
+//
+//print()
+//
+//
+//var result = Int(length)! * Int(width)!
+//print(result)
+
+
+//// 8) Напишите код который будет из текста переводить в число (Используйте серилизацию)
+//print("Enter a number:")
+//print()
+//
+//var a = readLine()!
+//print()
+//
+//var b = Int(a)
+//print(b)
+
+//// 8) Напишите код который будет из текста переводить в число (Используйте серилизацию) почему выдает только nil?
+//print("Enter a number:")
+//print()
+//
+//var a : Any = readLine()!
+//print()
+//
+//var b = a as? Int
+//print(b)
+
+
+////9) Напишите код который будет удалять и текста маты (су** б** и тд) (Работа с текстом split)
+//var arrayTabooedWords = ["сука", "блять", "хуй", "пизда", "пиздец", "нахуй", "долбоеб", "хуила", "пиздокрыл", "пидарас", "пидор", "пиздабол", "ебаный", "ебать", "еблан", "ебанутый"]
+//print("Enter text:")
+//var text = readLine()!
+//var textSplit = text.split(separator: " ")
+//
+//for item in 0...textSplit.count - 1 {
+//    for item1 in 0...arrayTabooedWords.count - 1 {
+//        if textSplit[item] == arrayTabooedWords[item1] {
+//            textSplit[item] = ""
+//        }
+//    }
+//}
+//print(textSplit)
+
+
+
+//10) Напишите код который будет заменять маты в тексте на * (су** б** и тд) (Работа с текстом split)
+var arrayTabooedWords = ["сука", "блять", "хуй", "пизда", "пиздец", "нахуй", "долбоеб", "хуила", "пиздокрыл", "пидарас", "пидор", "пиздабол", "ебаный", "ебать", "еблан", "ебанутый"]
+print("Enter text:")
+var text = readLine()!
+var result = String()
+
+    for item in arrayTabooedWords{
+        result = text.replacingOccurrences(of: item, with: "*")
+        }
+result = text.replacingOccurrences(of: "блять", with: "*")
+print(result)
