@@ -164,10 +164,19 @@ import Foundation
 var arrayTabooedWords = ["сука", "блять", "хуй", "пизда", "пиздец", "нахуй", "долбоеб", "хуила", "пиздокрыл", "пидарас", "пидор", "пиздабол", "ебаный", "ебать", "еблан", "ебанутый"]
 print("Enter text:")
 var text = readLine()!
+var array = [Character]()
+var textSplit = text.split(separator: " ")
 var result = String()
 
     for item in arrayTabooedWords{
-        result = text.replacingOccurrences(of: item, with: "*")
+        for item1 in 0...textSplit.count - 1 {
+            if item == textSplit[item1] {
+                array = Array(textSplit[item1])
+                array[array.count - 1] = "*"
+                array[array.count - 2] = "*"
+                textSplit[item1] = Substring(array)
+            }
         }
-result = text.replacingOccurrences(of: "блять", with: "*")
-print(result)
+        
+        }
+print(textSplit)
